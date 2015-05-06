@@ -1,0 +1,13 @@
+<template name="start">
+	{{> loginButtons}}
+	
+	<h1>Boka Massage på Nethouse</h1>
+	
+	{{> appointmentList}}
+	
+	{{#if currentUser}}
+	{{> appointmentCreate}}
+	{{else}}
+	Du måste logga in för att skapa nya massagetider
+	{{/if}}
+</template>

@@ -1,0 +1,10 @@
+
+<template name="appointmentList">
+	
+	<ul>
+		{{#each appointments}}
+		<li class="appointment">{{dateFormat date 'YYYY-MM-DD HH:mm'}} - {{bookedBy}}</li>
+		{{/each}}
+	</ul>
+		
+</template>
